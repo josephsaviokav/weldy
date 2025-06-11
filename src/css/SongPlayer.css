@@ -1,0 +1,73 @@
+/* SongPlayer.css */
+
+.song-player {
+  width: 100vw;
+  height: calc(100vh - 60px); /* adjust based on your navbar height */
+  background: linear-gradient(135deg, #121212, #5e1db9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+  margin-top: 0px; /* push below navbar if navbar is fixed */
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.cover {
+  width: 250px;
+  height: 250px;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.controls {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.track,
+.volume {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  max-width: 600px;
+}
+
+.track input,
+.volume input {
+  flex: 1;
+  appearance: none;
+  height: 6px;
+  border-radius: 4px;
+  background: white;
+  outline: none;
+  cursor: pointer;
+}
+
+.track span {
+  min-width: 40px;
+  font-size: 14px;
+}
